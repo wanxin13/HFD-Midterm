@@ -1,0 +1,11 @@
+auto/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+midterm.tex
+*.toc
+*.html

@@ -1,0 +1,194 @@
+\documentclass{report}
+\include{preamble}
+
+\title{\LectureTitle: Midterm}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Exercise 1}
+
+\subsection{A}
+
+1. This is the price of HD from 2007 to 2017.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_Prices_HD}
+\end{figure}
+
+This is the returns of HD from 2007 to 2017.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_r_HD}
+\end{figure}
+
+This is the price of VZ from 2007 to 2017.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_Prices_VZ}
+\end{figure}
+
+This is the returns of VZ from 2007 to 2017.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_r_VZ}
+\end{figure}
+
+2. This is the continuous returns of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_rc_HD}
+\end{figure}
+
+This is the jump returns of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_rd_HD}
+\end{figure}
+
+This is the continuous returns of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_rc_VZ}
+\end{figure}
+
+This is the jump returns of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1A_rd_VZ}
+\end{figure}
+
+3. From the data of HD, we can find 18 jumps in 2007, 10 jumps in 2008,  9 jumps in 2009, 4 jumps in 2010, 6 jumps in 2011, 15 jumps in 2012, 12 jumps in 2013, 12 jumps in 2014, 7 jumps in 2015, 14 jumps in 2016, 8 jumps in 2017.
+
+From the data of VZ, we can find 11 jumps in 2007, 11 jumps in 2008,  10 jumps in 2009, 17 jumps in 2010, 11 jumps in 2011, 13 jumps in 2012, 16 jumps in 2013, 15 jumps in 2014, 9 jumps in 2015, 8 jumps in 2016, 14 jumps in 2017.
+
+\subsection{B}
+This is the local variance estimator of HD in day $ t = 200$.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1B_HD}
+\end{figure}
+We can clearly see that the local variance estimator is higher at the begining and at the end of the day, which is reasonable since the volatility is usually higher at the begining and at the end of the day. In the middle of the day, especially at noon the local variance is relatively low.
+
+This is the local variance estimator of VZ in day $ t = 200$.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1B_VZ}
+\end{figure}
+We can clearly see that the local variance estimator is higher at the begining and at the end of the day, which is reasonable since the volatility is usually higher at the begining and at the end of the day. In the middle of the day, especially at noon the local variance is relatively low.
+
+\subsection{C}
+This is the average local variance estimator of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1C_HD}
+\end{figure}
+From the plot, we can find that the average local variance estimator is higher at the begining and at the end of the day, which is reasonable since the volatility is usually higher at the begining and at the end of the day. In the middle of the day, especially at noon the average local variance is low.The average local variance and the time of day factor has the same dynamics since both average local variance and average bipower factor estimate the average variance in a day. However, the plot of average local variance estimator is much smoother than plot of time of day factor since local variance estimates the variance of every moment.
+
+This is the average local variance estimator of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1C_VZ}
+\end{figure}
+From the plot, we can find that the average local variance estimator is higher at the begining and at the end of the day, which is reasonable since the volatility is usually higher at the begining and at the end of the day. In the middle of the day, especially at noon the average local variance is low.The average local variance and the time of day factor has the same dynamics since both average local variance and average bipower factor estimate the average variance in a day. However, the plot of average local variance estimator is much smoother than plot of time of day factor since local variance estimates the variance of every moment.
+
+
+\section{ Exercise 2}
+
+\subsection{A}
+1. This is the table of HD reporting jump magnitude, local variance estimator and the 95\% confidence interval of jumps and 95\% confidence interval of jump magnitude.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[height=0.1\textheight ,width=0.9\textwidth]{figures//2A_HD}
+\end{figure}
+
+2. We know that the returns across the jump interval are always in the confidence interval. From the table, we find that local variance estimators are sometimes larger at jump intervals, which means the confidence interval are quite large. Thus, returns across the jump interval cannot accurately indicate the actual jump when jump magnitude and local variance are both big. If the local variance is small, the returns across jump interval can help us estimate actual jump.
+
+1. This is the table of VZ reporting jump magnitude, local variance estimator and the 95\% confidence interval of jumps and 95\% confidence interval of jump magnitude.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[height=0.1\textheight ,width=0.9\textwidth]{figures//2A_VZ}
+\end{figure}
+
+2. We know that the returns across the jump interval are always in the confidence interval. From the table, we find that local variance estimators are sometimes larger at jump intervals, which means the confidence interval are quite large. Thus, returns across the jump interval cannot successfully reflect the actual jump when jump magnitude and local variance are both big. If the local variance is small, the returns across jump interval can help us estimate actual jump.
+
+\subsection{B}
+1. This is the table of HD reporting jump magnitude, left limit of local variance estimator, right limit of local variance estimator and the 95\% confidence interval of jumps and 95\% confidence interval of jump magnitude.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[height=0.1\textheight ,width=0.9\textwidth]{figures//2B_HD}
+\end{figure}
+
+2. From this table and the table in section A, we cannot find big difference in confidence intervals, which means variance jumps are not really important for calculating confidence interval for returns of jumps. We can calculate a similar confidence interval without assuming there is a variance jump.
+
+3. From this table, we can oberserve that the left limits of local variance estimator and the right limits of local variance estimator are quite different, which indicates there are variance jumps at these points. Thus, the prices and variances jump together at these three points. Thus, I think co-jumps theory do indicate the variance jumps of stock HD. But accounting for variance jump does little help for more accurate confidence intervals for returns of jumps. 
+
+1. This is the table of VZ reporting jump magnitude, left limit of local variance estimator, right limit of local variance estimator and the 95\% confidence interval of jumps and 95\% confidence interval of jump magnitude.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[height=0.1\textheight ,width=0.9\textwidth]{figures//2B_VZ}
+\end{figure}
+
+2. From this table and the table in section A, we cannot find big difference in confidence intervals, which means variance jumps are not really important for calculating confidence interval for returns of jumps. We can calculate a similar confidence interval without assuming there is a variance jump.
+
+3. From this table, we can oberserve that the left limits of local variance estimator and the right limits of local variance estimator are quite different, which indicates there are variance jumps at these points. Thus, the prices and variances jump together at these three points. Thus, I think co-jumps theory do indicate the variance jumps of stock VZ. But accounting for variance jump does little help for more accurate confidence intervals for returns of jumps. 
+
+
+\section{ Exercise 3}
+
+\subsection{A}
+1. This is the realized beta estimator of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3A_HD}
+\end{figure}
+
+This is the realized beta estimator of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//3A_VZ}
+\end{figure}
+
+2. The realized beta estimator is an estimator of realized beta and the realized beta is an estimator of real beta.  According to CAPM, if the returns of stock market change 1 percent, the returns of a stock will change $\beta$ percent.
+
+3. Yes. From the plot, we can observe that the realized beta varied over years. For example, the largest realized beta of HD happened in 2008 and nearly reached 3.5, but the smallest realized beta of HD was nearly -1.  And the largest realized beta of VZ happened in 2017 and nearly reached 2.5, but the smallest realized beta of VZ was less than -1.
+
+4. No. From the plot, we notice that the realized beta of HD and VZ in these ten years even changed the sign on some points and the range of realized beta is nearly 4. Thus, it is quite irreasonable to assume a fixed data for a long time like in the usual CAPM.
+
+\subsection{B}
+1. This is the realized beta and 95\% confidence interval for realized beta of HD.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.8\textwidth]{figures//3B_1_HD}
+\end{figure}
+From the plot, we can see the difference between the upper bounds and lower bounds of confidence intervals are not large at most times, so these intervals are quite accurate at most times. Although when beta deviates a lot from 1, the confidence interval is wider.
+
+This is the realized beta and 95\% confidence interval for realized beta of VZ.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.8\textwidth]{figures//3B_1_VZ}
+\end{figure}
+From the plot, we can see the difference between the upper bounds and lower bounds of confidence intervals are not large at most times, so these intervals are quite accurate at most times. Although when beta deviates a lot from 1, the confidence interval is wider.
+
+
+2. This is the realized beta and 95\% confidence interval for realized beta of HD in Oct.2008. 
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=1\textwidth]{figures//3B_2_HD}
+\end{figure}
+We know Oct. 2008 is during financial crisis. From the plot, we observe that beta still flaculated around 1 and the range of upper bounds and lower bounds of confidence intervals are like 0.4, which I think is acceptable.
+
+This is the realized beta and 95\% confidence interval for realized beta of VZ in Oct.2008. 
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=1\textwidth]{figures//3B_2_VZ}
+\end{figure}
+We know Oct. 2008 is during financial crisis. From the plot, we observe that beta still flaculated around 1 and stayed below 1 for longer time. The range of upper bounds and lower bounds of confidence intervals are like 0.4, but at some points they are bigger than 0.6.
+
+\subsection{C}
+There are 2101 days among 2769 days when confidence intervals of realized beta of HD contains 1. There are 415 days when the upper bounds of confidence intervals of realized beta are less than 1 and there are 253 days when the lower bounds of confidence intervals of realized beta are greater than 1. I think stock HD is generally as risk as the market. The confidence intervals are not large at most times and it contain 1 with the probability $ \frac{2101}{2769} = 0.7588 $. Also the difference between the number of days when confidence intervals are below or above 1 is not large. Based on these facts, I think we can say returns of HD moves nearly one for one with returns of the U.S stock market at most times. 
+
+There are only 1213 days among 2769 days when confidence intervals of realized beta of VZ contains 1. There are 1519 days when the upper bounds of confidence intervals of realized beta are less than 1 and there are 37 days when the lower bounds of confidence intervals of realized beta are greater than 1. Thus, I think we cannot say the stock VZ is as risky as the market since confidence intervals contain 1 with the probability $ \frac{1213}{2769} = 0.4381 $, which is even less than 0.5. That means more than half of time, we are almost sure that beta cannot be 1. Since confidence intervals less than 1 with the probability $ \frac{1519}{2769} = 0.5486 $ I think the stock is generally less risky than U.S stock market, which means the returns of VZ moves less than 1 percent when returns of stock moves 1 percent.
+\end{document}
+
